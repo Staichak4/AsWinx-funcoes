@@ -8,8 +8,17 @@ Um número é ímpar se o resto da divisão desse número por 2 é diferente de 
 array contendo apenas os números que atendem a essa condição.
 
 Programa desenvolvido por:
- - Aluno 1
- - Aluno 2
- - Aluno 3
- - Aluno 4
+ - Pedro Staichaka
+ - Leonardo
+ - Assunção
+ - Carlos
 */
+
+function getOddNumbers(num) {
+    let impares = num.filter(num => num % 2 !== 0)
+    return impares
+}
+
+let num = [1, 2, 3, 4, 5, 6]
+
+console.log(`Esses são os numeros impáres: ${getOddNumbers(num)}`)
